@@ -11,4 +11,7 @@
     <string name="messagerowfrom2">Mom</string>
     <string name="messagerowpreview2">Where are you?</string>
     <string name="messagerowdate2">4/15/15</string>
+
+    <!--SingleMessage Activity -->
+    <string name="title_activity_single_message">Bob, John, Jerry</string>
 </resources>
