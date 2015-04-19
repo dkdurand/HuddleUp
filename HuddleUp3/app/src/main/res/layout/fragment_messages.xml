@@ -19,7 +19,7 @@
         android:layout_row="0"
         android:layout_column="0"
         android:layout_gravity="left"
-        android:textColor="#4D4D4D" />
+        android:textColor="@color/text_primary" />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -28,7 +28,8 @@
         android:id="@+id/date1"
         android:layout_row="0"
         android:layout_column="12"
-        android:elegantTextHeight="true" />
+        android:elegantTextHeight="true"
+        android:textColor="@color/text_primary" />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -37,7 +38,7 @@
         android:id="@+id/preview1"
         android:layout_row="1"
         android:layout_column="0"
-        android:textColor="#999999" />
+        android:textColor="@color/text_secondary" />
     <View
         android:layout_width="fill_parent"
         android:layout_height="1dp"
@@ -58,7 +59,7 @@
         android:layout_row="3"
         android:layout_column="0"
         android:layout_gravity="left"
-        android:textColor="#4D4D4D" />
+        android:textColor="@color/text_primary" />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -66,7 +67,8 @@
         android:text="@string/messagerowdate2"
         android:id="@+id/date2"
         android:layout_row="3"
-        android:layout_column="12" />
+        android:layout_column="12"
+        android:textColor="@color/text_primary"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -75,7 +77,7 @@
         android:id="@+id/preview2"
         android:layout_row="4"
         android:layout_column="0"
-        android:textColor="#999999" />
+        android:textColor="@color/text_secondary" />
     <View
         android:layout_width="fill_parent"
         android:layout_height="1dp"
@@ -85,4 +87,18 @@
         android:layout_marginTop="10dp"
         android:id="@+id/border2"
         android:layout_marginBottom="10dp" />
+
+    <ImageButton
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:id="@+id/addButton"
+        android:layout_row="26"
+        android:layout_column="12"
+        android:src="@android:drawable/ic_input_add"
+        android:elevation="4dp"
+        android:tint="@android:color/white"
+        android:background="@drawable/circle_ripple"
+        android:layout_columnSpan="3"/>
+
+
 </GridLayout>
