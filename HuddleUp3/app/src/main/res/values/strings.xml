@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">HuddleUp</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- Messages tab -->
+    <string name="messagerowfrom1">Bob, John, Jerry</string>
+    <string name="messagerowpreview1">Where are you?</string>
+    <string name="messagerowdate1">4/15/15</string>
+
+    <string name="messagerowfrom2">Mom</string>
+    <string name="messagerowpreview2">Where are you?</string>
+    <string name="messagerowdate2">4/15/15</string>
+</resources>
