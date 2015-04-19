@@ -4,7 +4,6 @@
     <color name="accent">#FF009688</color>
     <color name="text_primary">#4D4D4D</color>
     <color name="text_secondary">#999999</color>
-    <color name="android_green">#FFA4C639</color>
     <color name="background">#FFFFFFFF</color>
 
 </resources>
