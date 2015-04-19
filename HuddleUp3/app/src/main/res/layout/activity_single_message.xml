@@ -3,96 +3,88 @@
     android:layout_width="match_parent" android:layout_height="match_parent"
     tools:context="edu.ncsu.csc454.huddleup.SingleMessageActivity" tools:ignore="MergeRootFrame" >
 
-    <TableLayout
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Bob"
+        android:id="@+id/textView"
         android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true">
+        android:layout_alignParentStart="true"
+        android:paddingLeft="5dp"
+        android:layout_marginTop="10dp" />
 
-        <TableRow
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Where are you?"
+        android:id="@+id/textView2"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/textView"
+        android:padding="10dp"
+        android:background="#FFFFFFFF"
+        android:layout_marginTop="10dp"
+        android:elevation="4dp" />
 
-            <TextView
-                android:layout_width="100dp"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="Bob"
-                android:id="@+id/textView"
-                android:paddingLeft="5dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="I&apos;m here"
+        android:id="@+id/textView3"
+        android:background="#ffc8ffc5"
+        android:padding="10dp"
+        android:layout_below="@+id/textView2"
+        android:layout_toStartOf="@+id/textView4"
+        android:layout_marginEnd="37dp"
+        android:layout_marginTop="10dp"
+        android:elevation="4dp" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="Where are you?"
-                android:id="@+id/textView2"
-                android:background="#ffe1f4ff"
-                android:padding="10dp"
-                android:layout_marginBottom="10dp" />
-        </TableRow>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Me"
+        android:id="@+id/textView4"
+        android:layout_marginRight="5dp"
+        android:padding="5dp"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp" />
 
-        <TableRow
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content">
+    <EditText
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/editText"
+        android:layout_alignParentBottom="true"
+        android:background="#FFFFFFFF"
+        android:layout_marginTop="10dp"
+        android:paddingTop="20dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:layout_toStartOf="@+id/button"
+        android:paddingBottom="10dp" />
 
-            <TextView
-                android:layout_width="150dp"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:id="@+id/textView5" />
+    <ImageButton
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/textView4"
+        android:src="@drawable/ic_send_grey600_18dp"
+        android:background="#00ffffff" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="I&apos;m here"
-                android:id="@+id/textView3"
-                android:background="#fffcc9ff"
-                android:layout_marginBottom="10dp"
-                android:padding="10dp" />
-
-            <TextView
-                android:layout_width="65dp"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="Me"
-                android:id="@+id/textView4"
-                android:layout_gravity="right"
-                android:paddingRight="5dp" />
-
-        </TableRow>
-
-        <TableRow
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent">
-
-            <Space
-                android:layout_width="match_parent"
-                android:layout_height="350dp"
-                android:layout_column="0" />
-        </TableRow>
-
-        <TableRow
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent">
-
-            <EditText
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:inputType="textMultiLine"
-                android:ems="10"
-                android:id="@+id/editText"
-                android:layout_column="0"
-                android:layout_span="2" />
-
-            <Button
-                style="?android:attr/buttonStyleSmall"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Send"
-                android:id="@+id/button"
-                android:layout_column="2" />
-        </TableRow>
-    </TableLayout>
+    <ImageButton
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/ic_attach_file_grey600_18dp"
+        android:background="#00ffffff"/>
 </RelativeLayout>

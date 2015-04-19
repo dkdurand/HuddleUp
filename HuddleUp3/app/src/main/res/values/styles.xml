@@ -5,6 +5,12 @@
         <!-- Customize your theme here. -->
 
     </style>
+    <style name="ActivityTheme" parent="android:Theme.Material.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:actionBarTheme"></item>
+
+    </style>
+
     <style name="FloatingActionButton" parent="android:Widget.Material.Button">
         <item name="android:background">@drawable/circle_ripple</item>
         <item name="android:layout_width">56dp</item>

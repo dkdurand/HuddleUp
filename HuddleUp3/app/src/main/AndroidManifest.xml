@@ -18,7 +18,8 @@
         </activity>
         <activity
             android:name=".SingleMessageActivity"
-            android:label="@string/title_activity_single_message" >
+            android:label="@string/title_activity_single_message"
+            android:theme="@style/ActivityTheme">
         </activity>
     </application>
 
