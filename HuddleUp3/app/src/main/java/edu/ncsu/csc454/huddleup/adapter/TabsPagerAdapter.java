@@ -7,6 +7,7 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
+import edu.ncsu.csc454.huddleup.AccountFragment;
 import edu.ncsu.csc454.huddleup.HomeFragment;
 import edu.ncsu.csc454.huddleup.MapFragment;
 import edu.ncsu.csc454.huddleup.MessagesFragment;
@@ -30,6 +31,9 @@ public class TabsPagerAdapter extends FragmentPagerAdapter {
             case 2:
                 // Movies fragment activity
                 return new MessagesFragment();
+            case 3:
+                // Movies fragment activity
+                return new AccountFragment();
         }
 
         return null;
@@ -38,7 +42,7 @@ public class TabsPagerAdapter extends FragmentPagerAdapter {
     @Override
     public int getCount() {
         // get item count - equal to number of tabs
-        return 3;
+        return 4;
     }
 
 }
