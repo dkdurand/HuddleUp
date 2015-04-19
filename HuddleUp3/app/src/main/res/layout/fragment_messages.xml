@@ -29,11 +29,13 @@
         android:text="@string/messagerowdate1"
         android:id="@+id/date1"
         android:layout_row="0"
-        android:layout_column="12"
+        android:layout_column="11"
         android:elegantTextHeight="true"
         android:textColor="@color/text_primary"
         android:onClick="onClick"
-        android:clickable="true"/>
+        android:clickable="true"
+        android:gravity="right"
+        android:layout_marginRight="10dp" />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -73,8 +75,9 @@
         android:text="@string/messagerowdate2"
         android:id="@+id/date2"
         android:layout_row="3"
-        android:layout_column="12"
-        android:textColor="@color/text_primary"/>
+        android:layout_column="11"
+        android:textColor="@color/text_primary"
+        android:gravity="right" />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
