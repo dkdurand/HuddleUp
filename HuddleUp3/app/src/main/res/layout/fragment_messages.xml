@@ -289,12 +289,12 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"></LinearLayout>
 
-    <!--<ImageButton
+    <ImageButton
         style="@style/FloatingActionButton"
         android:id="@+id/addButton"
         android:src="@android:drawable/ic_input_add"
         android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginRight="5dp" />-->
+        android:layout_marginRight="5dp" />
 
 </RelativeLayout>
