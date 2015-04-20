@@ -12,6 +12,22 @@
     <string name="messagerowpreview2">Where are you?</string>
     <string name="messagerowdate2">4/15/15</string>
 
+    <string name="messagerowfrom3">John</string>
+    <string name="messagerowpreview3">Where are you?</string>
+    <string name="messagerowdate3">4/12/15</string>
+
+    <string name="messagerowfrom4">Jenny, Mike</string>
+    <string name="messagerowpreview4">Where are you?</string>
+    <string name="messagerowdate4">4/03/15</string>
+
+    <string name="messagerowfrom5">Jerry</string>
+    <string name="messagerowpreview5">Where are you?</string>
+    <string name="messagerowdate5">4/02/15</string>
+
+    <string name="messagerowfrom6">Susan</string>
+    <string name="messagerowpreview6">Where are you?</string>
+    <string name="messagerowdate6">3/15/15</string>
+
     <!--SingleMessage Activity -->
     <string name="title_activity_single_message">Bob, John, Jerry</string>
 </resources>
