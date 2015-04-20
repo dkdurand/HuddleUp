@@ -6,6 +6,7 @@ import android.app.FragmentTransaction;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.view.ViewPager;
+import android.text.Html;
 
 import edu.ncsu.csc454.huddleup.adapter.TabsPagerAdapter;
 
@@ -31,7 +32,9 @@ public class MainActivity extends FragmentActivity implements ActionBar.TabListe
         viewPager.setAdapter(mAdapter);
         actionBar.setHomeButtonEnabled(false);
         actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
+        //set background and text color
         actionBar.setBackgroundDrawable(getResources().getDrawable(R.drawable.ad_action_bar));
+        actionBar.setTitle(Html.fromHtml("<font color='#FFFFFF'>" + getString(R.string.app_name) + "</font>"));
 
         // Adding Tabs
         for (String tab_name : tabs) {
