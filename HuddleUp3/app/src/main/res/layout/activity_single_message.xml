@@ -1,6 +1,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools" android:id="@+id/container"
     android:layout_width="match_parent" android:layout_height="match_parent"
+    android:theme="@style/ActivityTheme"
     tools:context="edu.ncsu.csc454.huddleup.SingleMessageActivity" tools:ignore="MergeRootFrame" >
 
     <TextView
@@ -13,7 +14,8 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentStart="true"
         android:paddingLeft="5dp"
-        android:layout_marginTop="10dp" />
+        android:layout_marginTop="10dp"
+        android:paddingTop="10dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -38,11 +40,10 @@
         android:id="@+id/textView3"
         android:background="#ffc8ffc5"
         android:padding="10dp"
-        android:layout_below="@+id/textView2"
-        android:layout_toStartOf="@+id/textView4"
-        android:layout_marginEnd="37dp"
-        android:layout_marginTop="10dp"
-        android:elevation="4dp" />
+        android:elevation="4dp"
+        android:layout_below="@+id/textView6"
+        android:layout_alignEnd="@+id/editText"
+        android:layout_marginTop="10dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -55,7 +56,8 @@
         android:padding="5dp"
         android:layout_alignBottom="@+id/textView3"
         android:layout_alignParentEnd="true"
-        android:layout_marginTop="10dp" />
+        android:layout_marginTop="10dp"
+        android:paddingTop="5dp" />
 
     <EditText
         android:layout_width="260dp"
@@ -91,4 +93,31 @@
         android:layout_alignParentStart="true"
         android:src="@drawable/ic_attach_file_grey600_18dp"
         android:background="#00ffffff"/>
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="John"
+        android:id="@+id/textView5"
+        android:textColor="@color/text_primary"
+        android:paddingLeft="5dp"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+        android:paddingTop="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="I&apos;m over by the Bell Tower. Come find me!"
+        android:id="@+id/textView6"
+        android:background="#FFFFFFFF"
+        android:elevation="4dp"
+        android:padding="10dp"
+        android:textColor="@color/text_primary"
+        android:layout_marginRight="5dp"
+        android:layout_alignTop="@+id/textView5"
+        android:layout_toEndOf="@+id/textView5" />
 </RelativeLayout>
