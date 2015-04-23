@@ -10,6 +10,13 @@
     android:orientation="vertical"
     tools:context="edu.ncsu.csc454.huddleup.fragments.HomeFragment">
 
+    <View
+        android:id="@+id/border"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:background="#31423d42" />
+
     <ListView
         android:id="@+id/listView"
         android:layout_width="wrap_content"

@@ -7,6 +7,13 @@
     tools:context="edu.ncsu.csc454.huddleup.fragments.HomeFragment"
     android:orientation="vertical">
 
+    <View
+        android:id="@+id/border"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:background="#31423d42" />
+
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="fill_parent"
@@ -17,16 +24,18 @@
             android:layout_height="wrap_content"
             android:text="UserName: "
             android:id="@+id/userNameLabel"
-            android:textAppearance="?android:attr/textAppearanceLarge" />
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_marginLeft="10dp" />
 
         <EditText
             android:id="@+id/userNameText"
-            android:layout_width="wrap_content"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:inputType="textPersonName"
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:ems="10"
-            android:layout_gravity="center_horizontal" />
+            android:layout_gravity="top|center_horizontal|right"
+            android:layout_marginRight="10dp" />
     </LinearLayout>
 
     <View
@@ -46,15 +55,17 @@
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:text="Status: "
-            android:id="@+id/statusLabel" />
+            android:id="@+id/statusLabel"
+            android:layout_marginLeft="10dp" />
 
         <EditText
             android:id="@+id/statusText"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:layout_width="wrap_content"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:layout_gravity="center_horizontal" />
+            android:layout_gravity="top|center_horizontal|right"
+            android:layout_marginRight="10dp" />
     </LinearLayout>
 
     <View
@@ -74,15 +85,18 @@
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:text="Password: "
-            android:id="@+id/passwordLabel" />
+            android:id="@+id/passwordLabel"
+            android:layout_marginLeft="10dp" />
 
         <EditText
-            android:layout_width="wrap_content"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
+
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:inputType="textPassword"
             android:ems="10"
-            android:id="@+id/passwordText" />
+            android:id="@+id/passwordText"
+            android:layout_marginRight="10dp" />
     </LinearLayout>
 
     <View
@@ -102,15 +116,17 @@
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:text="Email: "
-            android:id="@+id/emailLabel" />
+            android:id="@+id/emailLabel"
+            android:layout_marginLeft="10dp" />
 
         <EditText
-            android:layout_width="wrap_content"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:inputType="textEmailAddress"
             android:ems="10"
-            android:id="@+id/emailText" />
+            android:id="@+id/emailText"
+            android:layout_marginRight="10dp" />
     </LinearLayout>
 
     <View

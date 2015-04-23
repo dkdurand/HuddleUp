@@ -5,11 +5,25 @@
     android:orientation="vertical"
     android:background="@color/accent" >
 
+    <View
+        android:id="@+id/border"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:background="#31423d42" />
+
     <ImageView
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:id="@+id/imageView"
         android:src="@drawable/map"
         android:layout_alignParentTop="true" />
+
+    <View
+        android:id="@+id/border1"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:background="#31423d42" />
 
 </RelativeLayout>
