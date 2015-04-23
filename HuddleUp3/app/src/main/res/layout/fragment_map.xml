@@ -5,12 +5,11 @@
     android:orientation="vertical"
     android:background="@color/accent" >
 
-    <TextView android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="Map"
-        android:textSize="20dp"
-        android:layout_centerInParent="true"/>
-
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/imageView"
+        android:src="@drawable/map"
+        android:layout_alignParentTop="true" />
 
 </RelativeLayout>

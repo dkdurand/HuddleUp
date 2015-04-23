@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.ncsu.csc454.huddleup.fragments.HomeFragment"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_gravity="center_horizontal" />
+
+    <EditText
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal" />
+
+    <CheckBox
+        android:id="@+id/shareTimeCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/shareTimeCheckBoxText"
+        android:checked="true" />
+    <SeekBar
+        android:id="@+id/shareTimeSeekBar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:max="24"
+        android:indeterminate="false"/>
+    <TextView
+        android:id="@+id/shareTimeTextView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"/>
+    <View
+        android:id="@+id/border1"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:background="#31423d42" />
+    <CheckBox
+        android:id="@+id/viewTimeCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/viewTimeCheckBoxText"
+        android:checked="true"
+        android:layout_gravity="center_horizontal" />
+    <SeekBar
+        android:id="@+id/viewTimeSeekBar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:max="24"
+        android:indeterminate="false"/>
+    <TextView
+        android:id="@+id/viewTimeTextView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"/>
+    <View
+        android:id="@+id/border2"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:background="#31423d42" />
+
+    <Button
+        android:id="@+id/deleteContact"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        style="?android:attr/buttonStyleSmall"
+        android:text="@string/deleteContactText" />
+</LinearLayout>

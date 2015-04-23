@@ -1,81 +1,55 @@
 package edu.ncsu.csc454.huddleup;
 
 import android.app.ActionBar;
-import android.app.ActionBar.Tab;
-import android.app.FragmentTransaction;
+import android.app.Activity;
+import android.app.Fragment;
 import android.os.Bundle;
-import android.support.v4.app.FragmentActivity;
-import android.support.v4.view.ViewPager;
-import android.text.Html;
 
-import edu.ncsu.csc454.huddleup.adapter.TabsPagerAdapter;
+import edu.ncsu.csc454.huddleup.fragments.AccountFragment;
+import edu.ncsu.csc454.huddleup.fragments.HomeFragment;
+import edu.ncsu.csc454.huddleup.fragments.InboxFragment;
+import edu.ncsu.csc454.huddleup.fragments.MapFragment;
+import edu.ncsu.csc454.huddleup.listeners.TabListener;
 
 
-public class MainActivity extends FragmentActivity implements ActionBar.TabListener {
+public class MainActivity extends Activity{
 
-    private ViewPager viewPager;
-    private TabsPagerAdapter mAdapter;
-    private ActionBar actionBar;
-    // Tab titles
-    private String[] tabs = { "Home", "Map", "Messages", "Account" };
+    ActionBar.Tab homeTab, mapTab, inboxTab, accountTab;
 
+    // Fragments that will load when the tabs are clicked
+    Fragment homeFragment = new HomeFragment();
+    Fragment mapFragment = new MapFragment();
+    Fragment inboxFragment = new InboxFragment();
+    Fragment accountFragment = new AccountFragment();
+
+
+    @SuppressWarnings("deprecation")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        ActionBar actionBar = getActionBar();
 
-        // Initilization
-        viewPager = (ViewPager) findViewById(R.id.pager);
-        actionBar = getActionBar();
-        mAdapter = new TabsPagerAdapter(getSupportFragmentManager());
-
-        viewPager.setAdapter(mAdapter);
-        actionBar.setHomeButtonEnabled(false);
+        // Set the current navigation mode to tabs
         actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
-        //set background and text color
-        actionBar.setBackgroundDrawable(getResources().getDrawable(R.drawable.ad_action_bar));
-        actionBar.setTitle(Html.fromHtml("<font color='#FFFFFF'>" + getString(R.string.app_name) + "</font>"));
 
-        // Adding Tabs
-        for (String tab_name : tabs) {
-            actionBar.addTab(actionBar.newTab().setText(tab_name)
-                    .setTabListener(this));
-        }
+        // Add titles to tabs
+        homeTab = actionBar.newTab().setText("Home");
+        mapTab = actionBar.newTab().setText("Map");
+        inboxTab = actionBar.newTab().setText("Inbox");
+        accountTab = actionBar.newTab().setText("Account");
 
-        /**
-         * on swiping the viewpager make respective tab selected
-         * */
-        viewPager.setOnPageChangeListener(new ViewPager.OnPageChangeListener() {
+        // Set tab listeners which provide callbacks for tab events
+        // A callback informs another class when an action occurs
+        homeTab.setTabListener(new TabListener(homeFragment));
+        mapTab.setTabListener(new TabListener(mapFragment));
+        inboxTab.setTabListener(new TabListener(inboxFragment));
+        accountTab.setTabListener(new TabListener(accountFragment));
 
-            @Override
-            public void onPageSelected(int position) {
-                // on changing the page
-                // make respected tab selected
-                actionBar.setSelectedNavigationItem(position);
-            }
-
-            @Override
-            public void onPageScrolled(int arg0, float arg1, int arg2) {
-            }
-
-            @Override
-            public void onPageScrollStateChanged(int arg0) {
-            }
-        });
-    }
-
-    @Override
-    public void onTabReselected(Tab tab, FragmentTransaction ft) {
-    }
-
-    @Override
-    public void onTabSelected(Tab tab, FragmentTransaction ft) {
-        // on tab selected
-        // show respected fragment view
-        viewPager.setCurrentItem(tab.getPosition());
-    }
-
-    @Override
-    public void onTabUnselected(Tab tab, FragmentTransaction ft) {
+        // Adds tabs to the actionbar
+        actionBar.addTab(homeTab);
+        actionBar.addTab(mapTab);
+        actionBar.addTab(inboxTab);
+        actionBar.addTab(accountTab);
     }
 }

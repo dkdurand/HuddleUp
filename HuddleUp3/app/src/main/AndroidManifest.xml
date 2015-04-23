@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
     package="edu.ncsu.csc454.huddleup" >
 
+    <!-- @android:style/Theme.Holo -->
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -17,8 +19,13 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".SingleMessageActivity"
+            android:name=".activities.SingleMessageActivity"
             android:label="@string/title_activity_single_message"
+            android:theme="@style/ActivityTheme">
+        </activity>
+        <activity
+            android:name=".activities.EditContactActivity"
+            android:label="@string/title_activity_edit_contact"
             android:theme="@style/ActivityTheme">
         </activity>
     </application>

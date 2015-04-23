@@ -1,20 +1,24 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="android:Theme.Material.Light.DarkActionBar">
+    <style
+        name="AppTheme"
+        parent="android:Theme.Material.Light.DarkActionBar">
     </style>
 
-    <style name="ActivityTheme" parent="android:Theme.Material.Light.DarkActionBar">
+    <style
+        name="ActivityTheme"
+        parent="android:Theme.Material.Light.DarkActionBar">
         <item name="android:colorPrimary">@color/actionbar</item>
     </style>
 
-    <style name="FloatingActionButton" parent="android:Widget.Material.Button">
+    <style
+        name="FloatingActionButton"
+        parent="android:Widget.Material.Button">
         <item name="android:background">@drawable/circle_ripple</item>
         <item name="android:layout_width">56dp</item>
         <item name="android:layout_height">56dp</item>
         <item name="android:elevation">4dp</item>
         <item name="android:tint">@android:color/white</item>
     </style>
-
-
 </resources>

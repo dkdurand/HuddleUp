@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ripple xmlns:android="http://schemas.android.com/apk/res/android"
-    android:color="?android:colorControlHighlight">
+<ripple
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="@color/test1">
     <item>
         <shape android:shape="oval">
-            <solid android:color="?android:colorAccent"/>
+            <solid android:color="@color/test2"/>
         </shape>
     </item>
 </ripple>

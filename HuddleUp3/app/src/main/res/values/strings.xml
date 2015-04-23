@@ -3,31 +3,35 @@
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
 
-    <!-- Messages tab -->
-    <string name="messagerowfrom1">Bob, John, Jerry</string>
-    <string name="messagerowpreview1">Where are you?</string>
-    <string name="messagerowdate1">4/15/15</string>
+    <!-- Home tab -->
+    <string name="homeTab">Home</string>
+    <string name="shareCheckBoxText">Share</string>
+    <string name="viewCheckBoxText">View</string>
+    <string name="messageCheckBoxText">Msg</string>
 
-    <string name="messagerowfrom2">Mom</string>
-    <string name="messagerowpreview2">Where are you?</string>
-    <string name="messagerowdate2">4/15/15</string>
+    <!-- Contact options -->
+    <string name="shareTimeCheckBoxText">Share Indefinitely</string>
+    <string name="viewTimeCheckBoxText">View Indefinitely</string>
+    <string name="editContactText">Edit Contact</string>
+    <string name="deleteContactText">Delete Contact</string>
 
-    <string name="messagerowfrom3">John</string>
-    <string name="messagerowpreview3">Where are you?</string>
-    <string name="messagerowdate3">4/12/15</string>
+    <!-- Map tab -->
+    <string name="mapTab">Map</string>
 
-    <string name="messagerowfrom4">Jenny, Mike</string>
-    <string name="messagerowpreview4">Where are you?</string>
-    <string name="messagerowdate4">4/03/15</string>
-
-    <string name="messagerowfrom5">Jerry</string>
-    <string name="messagerowpreview5">Where are you?</string>
-    <string name="messagerowdate5">4/02/15</string>
-
-    <string name="messagerowfrom6">Susan</string>
-    <string name="messagerowpreview6">Where are you?</string>
-    <string name="messagerowdate6">3/15/15</string>
+    <!-- Message tab -->
+    <string name="messageTab">Inbox</string>
 
     <!--SingleMessage Activity -->
     <string name="title_activity_single_message">Bob, John, Jerry</string>
+
+    <!-- Account tab -->
+    <string name="accountTab">Account</string>
+
+    <!-- Menu titles -->
+    <string name="main_menu_title">Menu Main</string>
+    <string name="message_menu_title">Message Menu</string>
+    <string name="single_message_menu_title">Single Message Menu</string>
+    <string name="add_contact_button_description">Add Contact</string>
+    <string name="create_new_message_button_description">Create New Message</string>
+    <string name="title_activity_edit_contact">Edit Contact</string>
 </resources>
